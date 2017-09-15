@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.kmhenson.business.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        >
+      <ImageView
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:src = "@drawable/world"
+          android:scaleType= "centerCrop"
+          />
+      <ImageView
+          android:id = "@+id/symbol"
+          android:layout_width="match_parent"
+          android:layout_height="200dp"
+          android:src = "@drawable/recycling"
+          android:layout_margin="20dp"/>
+      <TextView
+          android:id = "@+id/title"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Recycling Club"
+          android:layout_centerHorizontal="true"
+          android:textSize="50sp"
+          android:layout_below="@id/symbol"
+          android:textColor="@android:color/white"
+          android:textStyle = "bold"/>
+      <ImageView
+          android:id = "@+id/loc"
+          android:layout_width="40dp"
+          android:layout_height="40dp"
+          android:src = "@drawable/location"
+          android:layout_below = "@id/title"
+          android:layout_margin = "10dp"/>
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text = "Room 502 (Mrs. Pelphrey's Room)"
+          android:textSize="30sp"
+          android:layout_toRightOf="@id/loc"
+          android:layout_alignTop="@id/loc"
+          android:textColor="@android:color/white"
+          android:textStyle = "bold"/>
+      <ImageView
+          android:id = "@+id/time"
+          android:layout_width="40dp"
+          android:layout_height="40dp"
+          android:src = "@drawable/time"
+          android:layout_below="@id/loc"
+          android:layout_margin = "10dp"
+          />
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text = "3:20-4:15 pm"
+          android:textSize="30sp"
+          android:layout_alignTop="@id/time"
+          android:layout_toRightOf="@id/time"
+          android:textColor="@android:color/white"
+          android:textStyle = "bold"/>
+      <ImageView
+          android:id = "@+id/cal"
+          android:layout_width="40dp"
+          android:layout_height="40dp"
+          android:src = "@drawable/calendar"
+          android:layout_below="@id/time"
+          android:layout_margin="10dp"/>
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text = "Every Thursday!!"
+          android:textSize="30sp"
+          android:layout_alignTop = "@id/cal"
+          android:layout_toRightOf="@id/cal"
+          android:textColor="@android:color/white"
+          android:textStyle = "bold"/>
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:textSize = "25sp"
+          android:text = "Join recycling club! We take out the recycling for the top floor of the school. This helps the environment by reducing the amount of waste in landfills! It also helps our school save money so come by for a good time. Even if you can't come every week you are still welcome! "
+          android:layout_below = "@id/cal"
+          android:layout_margin="10dp"
+          android:textColor="@android:color/white"
+          android:textStyle = "bold"
+          />
+
+
+
+
+</RelativeLayout>
+
+    </android.support.constraint.ConstraintLayout>
